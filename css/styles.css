@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "ubuntu";
+    box-sizing: border-box;
+}
+h2, h3{
+    color: hsl(208, 49%, 24%);
+}
+ul {
+    list-style: none;
+}
+/* header */
+header{
+    background-image:  url('../images/bg-pattern-intro-desktop.svg'), linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%) 75%);
+    background-repeat: no-repeat;
+    background-position: 25% 52%;
+    background-size: 210%;
+    border-radius: 0 0 0 100px;
+    padding: 4rem 14rem;
+}
+/* navbar section */
+nav{
+    display: flex;
+}
+.logo{
+    margin-right: 2rem;
+}
+
+/* nav items and list items */
+.nav-item{
+    display: flex;
+}
+
+.list-item{
+    
+    padding: .8rem 1.5rem;
+    position: relative;
+}
+.list-item a{
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+.list-item img{
+    padding-left: .3rem;
+    transition: all .3s ease-in-out ;
+}
+/* drop down rotate icon */
+.rotate{
+    transform: rotate(-180deg);
+    transition: all .1s ease-in-out;
+}
+.list-item a:hover{
+    text-decoration: underline;
+}
+.product-dropdown ul, .company-dropdown ul, .connect-dropdown ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 1.5rem 1rem;
+    width: 10rem;
+    border-radius: 5px;
+    margin: 1.5rem 0  0;
+    transition: all 1s ease-in-out;
+    box-shadow: 0px 6px 30px 0px hsla(237, 23%, 32%, 0.358);
+}
+.product-dropdown ul{
+    left: -2rem;
+}
+.company-dropdown ul{
+    left: 0rem;
+}
+.list-item li{
+    line-height: 2;
+}
+.list-item li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: hsl(237, 17%, 21%);
+}
+.list-item li a:hover{
+    color: hsl(237, 17%, 21%);
+    font-weight: 700;
+    text-decoration: none;
+}
+hr{
+    display: none;
+}
+/* navbar cta buttons */
+.nav-buttons{
+    margin-left: auto;
+}
+.nav-buttons button, .cta-btn button{
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sign-up-button{
+    border-radius: 50px;
+    border: none;
+    padding: 1rem 2.5rem;
+    color: hsl(353, 100%, 62%);
+    box-shadow: 1px 1px 2px hsl(353, 100%, 62%);
+}
+.sign-up-button:hover{
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+}
+.login-button{
+    background: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    color: white;
+}
+.hamburger, .close{
+    display: none;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.mobile-nav{
+    display: none;
+}
+/* heading section */
+.page-heading{
+    text-align: center;
+    padding: 6rem 0 0;
+}
+.page-heading h1{
+    font-size: 3.7rem;
+    letter-spacing: 2px;
+    padding: 1.5rem 0;
+    color: white;
+}
+.page-heading p{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 400;
+}
+/* cta buttons */
+.cta-btn{
+    text-align: center;
+    padding: 4rem 0 5rem;
+}
+.cta-btn1{
+    border-radius: 50px;
+    border: none;
+    padding: .9rem 1.5rem;
+    color: hsl(353, 100%, 62%);
+    box-shadow: 1px 1px 2px hsl(353, 100%, 62%);
+    margin-right: 1rem;
+}
+.cta-btn1:hover{
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+}
+.cta-btn2{
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: .8rem 1.5rem;
+    color: white;
+    background-color: transparent;
+    box-shadow: 1px 1px 2px hsl(353, 100%, 62%);
+}
+.cta-btn2:hover{
+    color: hsl(353, 100%, 62%);
+    background-color: white;
+}
+
+/* main section */
+main{
+    padding: 10rem 14rem;
+    overflow: hidden;
+}
+/* section1 */
+.first-section{
+    text-align: center;
+}
+
+.first-section h2{
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+.flex-grid{
+    display: flex;
+}
+.editor-desktop{
+    margin: -5rem -30rem 4rem 0;
+}
+.editor-mobile{
+    display: none;
+}
+.text-area{
+   padding: 10rem 5rem 0 0;
+}
+.text-area h3, .section3-text h3{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+.text-area p, .section3-text p{
+    padding: 1.5rem 0;
+    line-height: 1.8;
+    color: hsl(207, 13%, 34%);
+}
+.text-area div:nth-child(2), .section3-text div:nth-child(2){
+    padding-top: 4rem;
+}
+
+
+/* section2 */
+.section2{
+    background-image: url('../images/bg-pattern-circles.svg'),
+    linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%) 75%);
+    background-position: -40% 90%;
+    background-repeat: no-repeat;
+    margin: 0 -14rem;
+    border-radius: 0 100px 0 100px;
+    position: relative;
+    padding: 6.5rem 14rem;
+}
+.section2 h2{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.section2 p{
+    color: white;
+    padding: 1rem 0;
+    line-height: 2;
+}
+.section2 div:nth-child(1){
+    position: absolute;
+    left: 8rem;
+    top: -4.2rem;
+}
+.section2 div:nth-child(2){
+    padding: 0 0 0 50%;
+}
+
+/* section3 */
+.laptop-mobile{
+    display: none;
+}
+.section3{
+    display: flex;
+    padding: 8rem 0 0rem;
+}
+.laptop-desktop{
+    margin: 0 0 0 -31.5rem;
+}
+.section3-text{
+    padding: 11rem 0 0 4rem;
+}
+
+/* footer section */
+footer{
+    background-color: hsl(240, 10%, 16%);
+    border-radius: 0 100px 0 0;
+    padding: 4.5rem 14rem;
+    color: white
+}
+.footer-flex{
+    display: flex;
+    column-gap: 12rem;
+}
+.footer-flex h4{
+    padding-bottom: 2rem;
+}
+.footer-flex li{
+    line-height: 2;
+    color: hsl(240, 2%, 79%);
+    font-weight: 400;
+}
+.footer-flex li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.attribution{
+    text-align: center;
+    padding: 3rem 2rem 0;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(353, 100%, 62%);
+}
+.attribution a:hover{
+    color: hsl(355, 100%, 74%);
+}

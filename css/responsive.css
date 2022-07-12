@@ -1,0 +1,285 @@
+/* media queries */
+/* mobile design */
+@media (max-width:760px){
+    /* header */
+    header {
+        background-image: url('../images/bg-pattern-intro-mobile.svg'), linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%) 60%);
+        background-repeat: no-repeat;
+        background-position: 34% 34%;
+        background-size: 300%;
+        border-radius: 0 0 0 100px;
+        padding: 4rem 2rem;
+        position: relative;
+    }
+    /* nav items and list items */
+    .desktop-nav{
+        display: none;
+    }
+    /* harmburger and close icon */
+    .hamburger, .close{
+        position: absolute;
+        right: 2rem;
+        top: 4.7rem;
+        visibility: visible;
+    }
+    .hamburger{
+        display: block;
+    }
+    .nav-show{
+        display: block;
+    }
+    .mobile-nav{
+        position: absolute;
+        margin: 5rem 2rem;
+        padding: 2rem 1.5rem;
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0px 6px 30px 0px hsla(237, 23%, 32%, 0.358);
+        border-radius: 7px;
+    }
+    .nav-item {
+        display: block;
+        text-align: center;
+        
+    }
+    .list-item a {
+        font-weight: 700;
+        text-decoration: none;
+        color: hsl(237, 17%, 21%);
+    }
+    .product-dropdown ul,
+    .company-dropdown ul,
+    .connect-dropdown ul {
+        /* display: block; */
+        position: relative;
+        background-color: hsl(0, 0%, 94%);
+        padding: 1.5rem 1rem;
+        width: 100%;
+        left: auto;
+        box-shadow: none;
+    }
+    .list-item li {
+        line-height: 2.5;
+    }
+    .list-item li a {
+        text-decoration: none;
+        font-weight: 500;
+        color: hsl(237, 23%, 32%);
+    }
+    hr{
+        display: block;
+        border-width: 1px 0px 0px;
+        width: 87%;
+        margin: 1rem auto;
+        border-color: hsl(0, 0%, 100%);
+        
+    }
+    /* navbar cta buttons */
+   
+    .nav-buttons button {
+        text-align: center;
+       margin: 0 auto;
+        display: block;
+    }
+    .sign-up-button {
+        padding: 1rem 3rem;
+        color: white;
+        background:linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        box-shadow: 0px 0px 2px hsl(237, 17%, 21%);
+    }
+
+    .sign-up-button:hover {
+        background: transparent;
+        color: hsl(353, 100%, 62%);
+    }
+
+    .login-button {
+        padding: 1.5rem 1.5rem;
+        color: hsl(208, 49%, 24%);
+    }
+    /* heading section */
+
+    .page-heading h1 {
+        font-size: 2.6rem;
+        font-weight: 600;
+    }
+
+    .page-heading p {
+        font-size: 1.4rem;
+    }
+    /* cta buttons */
+    .cta-btn {
+        text-align: center;
+        padding: 3rem 0 5rem;
+    }
+    /* main section */
+    main {
+        padding: 8rem 2rem 3rem;
+    }
+    .first-section h2 {
+        font-size: 2rem;
+    }
+    .flex-grid {
+        display: block;
+    }
+    .editor-desktop {
+        display: none;
+    }
+    .editor-mobile {
+        display: block;
+        padding: 3rem 0 0;
+    }
+    .editor-mobile img{
+        width: 100%;
+    }
+    .text-area {
+        padding: 5rem 0 0 0;
+        text-align: center;
+    }
+    .text-area h3,
+    .section3-text h3 {
+        font-size: 2.1rem;
+    }
+    .text-area p,
+    .section3-text p {
+        padding: 1.5rem 0;
+
+    }
+    .text-area div:nth-child(2),
+    .section3-text div:nth-child(2) {
+        padding-top: 1rem;
+    }
+    /* section2 */
+    .section2 {
+        background-image: url('../images/bg-pattern-circles.svg'),
+            linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%) 125%);
+        background-position: 45% 270%;
+        background-size: 160%;
+        background-repeat: no-repeat;
+        margin: 20rem -2rem 0;
+        border-radius: 0 100px 0 100px;
+        position: relative;
+        padding: 6.5rem 2rem;
+        text-align: center;
+    }
+    .section2 div:nth-child(1) {
+        position: absolute;
+        left: 0rem;
+        top: -16rem;
+    }
+    .section2 img{
+        width: 100%;
+    }
+
+    .section2 div:nth-child(2) {
+        padding: 12rem 0 0rem;
+    }
+    /* section3 */
+    .laptop-mobile {
+        display: block;
+    }
+    .laptop-mobile img{
+        width: 100%;
+    }
+    .laptop-desktop {
+        display: none;
+    }
+
+    .section3 {
+        display: block;
+        padding: 3rem 0 0rem;
+        text-align: center;
+    }
+    .section3-text {
+        padding: 1rem 0 0 0rem;
+    }
+    /* footer section */
+    footer {
+        padding: 3.5rem 2rem;
+        text-align: center;
+    }
+
+    .footer-flex {
+        display: block;
+        column-gap: 0;
+    }
+    .footer-flex div{
+        padding-bottom: 3rem;
+    }
+    .attribution {
+        text-align: center;
+        padding: 4rem 0rem 0;
+    }
+    
+}
+
+
+
+/* tablet design */
+@media(max-width:1350px) and (min-width:761px){
+    /* header */
+    header{
+    padding: 4rem 5%;
+    }
+    /* main section */
+    main {
+        padding: 10rem 5rem;
+        overflow: hidden;
+    }
+    .laptop-desktop {
+        margin: 0 0 0 -60%;
+    }
+    .footer-flex {
+        display: flex;
+        column-gap: 15%;
+    }
+}
+
+@media(max-width:1100px) and (min-width:761px){
+    
+    .editor-desktop {
+        margin: -5rem -80% 4rem 0;
+    }
+    .text-area {
+        padding: 10% 5% 0 0;
+    }
+    /* section2 */
+    .section2 {
+        background-image: url('../images/bg-pattern-circles.svg'),
+            linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%) 125%);
+        background-position: 45% 270%;
+        background-size: 160%;
+        background-repeat: no-repeat;
+        margin: 20rem -5rem 0;
+        border-radius: 0 100px 0 100px;
+        position: relative;
+        padding: 6.5rem 2rem;
+        text-align: center;
+    }
+
+    .section2 div:nth-child(1) {
+        position: absolute;
+        left: 0rem;
+        right: 0;
+        top: -16rem;
+    }
+
+    .section2 img {
+        width: 35rem;
+    }
+
+    .section2 div:nth-child(2) {
+        padding: 12rem 0 0rem;
+    }
+    .laptop-desktop {
+        margin: 0 0 0 -35rem;
+    }
+    /* footer section */
+    footer {
+        padding: 4.5rem 5rem;
+    }
+    .footer-flex {
+        column-gap: 15%;
+    }
+}
